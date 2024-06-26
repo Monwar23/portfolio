@@ -29,7 +29,7 @@ const Contact = () => {
     return (
         <div className='mt-10 px-6'>
             <Fade direction='left'>
-                <h2 className='text-blue-500 text-3xl text-center font-bold mb-8'>Contact</h2>
+                <h2 className='text-blue-500 text-3xl text-center font-bold mt-5 lg:mt-0 mb-8'>Contact</h2>
             </Fade>
             <div className='flex justify-center'>
                 <div className='text-center text-white border border-blue-500 max w-[350px] p-5 mb-8'>

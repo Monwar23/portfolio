@@ -5,10 +5,10 @@ import { Fade } from 'react-awesome-reveal';
 const Skills = () => {
     return (
         <div className="skills-section relative z-10">
-            <h2 className='text-blue-500 text-3xl text-center font-bold mb-8'>Skills</h2>
+            <h2 className='text-blue-500 text-3xl mt-5 lg:mt-0 text-center font-bold mb-8'>Skills</h2>
             <div>
               
-               <div className='flex gap-10'>
+               <div className='flex flex-col lg:flex-row gap-10'>
                <Fade direction="left">
                <div className='bg-[#1a1a2e] rounded-md'>
                     <h2 className='border border-blue-500 text-white bg-gradient-to-r from-green-400 to-blue-500 p-2 text-center font-bold'>Frontend</h2>

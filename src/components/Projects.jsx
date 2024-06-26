@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <div className='mt-10'>
              <Fade direction='right'>
-             <h2 className='text-blue-500 text-3xl text-center font-bold mb-8'>Projects</h2>
+             <h2 className='text-blue-500 text-3xl mt-5 lg:mt-0 text-center font-bold mb-8'>Projects</h2>
              </Fade>
             <Fade>
             <div className="p-4 grid grid-cols-1 lg:grid-cols-3 gap-6">
