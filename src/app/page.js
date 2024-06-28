@@ -1,10 +1,27 @@
 "use client";
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Mine from "@/components/Mine";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
 
+import dynamic from "next/dynamic";
+
+// import About from "@/components/About";
+// import Contact from "@/components/Contact";
+// import Mine from "@/components/Mine";
+// import Projects from "@/components/Projects";
+// import Skills from "@/components/Skills";
+const About = dynamic(() => import("@/components/About"), {
+  ssr: false,
+});
+const Mine = dynamic(() => import("@/components/Mine"), {
+  ssr: false,
+});
+const Projects = dynamic(() => import("@/components/Projects"), {
+  ssr: false,
+});
+const Skills = dynamic(() => import("@/components/Skills"), {
+  ssr: false,
+});
+const Contact = dynamic(() => import("@/components/Contact"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (

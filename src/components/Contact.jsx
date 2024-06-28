@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
