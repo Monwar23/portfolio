@@ -7,6 +7,8 @@ import { FaFacebookF, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } fro
 import { FiGithub } from 'react-icons/fi';
 import "leaflet/dist/leaflet.css";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Contact = () => {
     const form = useRef();
@@ -18,10 +20,10 @@ const Contact = () => {
         emailjs.sendForm('service_sjk96hl', 'template_moznleh', form.current, 'HWHiVmWlGd0InUfYI')
             .then((result) => {
                 console.log(result.text);
-                alert('Message sent successfully!');
+                toast('Message sent successfully!');
             }, (error) => {
                 console.log(error.text);
-                alert('Failed to send message. Please try again later');
+                toast('Failed to send message. Please try again later.');
             });
 
         e.target.reset();
@@ -101,6 +103,7 @@ const Contact = () => {
                     </MapContainer>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
