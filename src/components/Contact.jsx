@@ -17,7 +17,7 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_sjk96hl', 'template_moznleh', form.current, 'HWHiVmWlGd0InUfYI')
+        emailjs.sendForm('service_9tgizvz', 'template_moznleh', form.current, 'HWHiVmWlGd0InUfYI')
             .then((result) => {
                 console.log(result.text);
                 toast('Message sent successfully!');
@@ -65,14 +65,14 @@ const Contact = () => {
                         <div>
                             <input
                                 type="text"
-                                name="name"
+                                name="from_name"
                                 placeholder="Your Name *"
                                 required
                                 className="w-full px-2 py-1 rounded-md border-2 border-blue-500 h-8 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                             <input
                                 type="email"
-                                name="email"
+                                name="from_email"
                                 placeholder="Email *"
                                 required
                                 className="w-full px-2 py-1 rounded-md border-2 border-blue-500 h-8 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500"

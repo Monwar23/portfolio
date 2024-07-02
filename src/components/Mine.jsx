@@ -57,7 +57,7 @@ const Mine = () => {
           <button className="btn btn-outline text-white mt-7 border-2 hover:text-blue-500 border-blue-500 ">Contact Me</button>
           </Link>
           <Link href="https://drive.google.com/file/d/15IbHeXAa18wGsPtMFlf9yV3rlyFJw9fe/view?usp=sharing" target='_blank'>
-          <button className="btn btn-outline text-white mt-7 border-2 hover:text-blue-500 border-blue-500 ">Resume</button>
+          <button className="btn btn-outline text-white mt-7 border-2 hover:text-blue-500 border-blue-500 ">View Resume</button>
           </Link>
           </div>
         </div>
