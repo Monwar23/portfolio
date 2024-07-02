@@ -5,7 +5,9 @@ import { Fade } from 'react-awesome-reveal';
 const Skills = () => {
     return (
         <div className="skills-section relative z-10">
+            <Fade direction='right'>
             <h2 className='text-blue-500 text-3xl mt-5 lg:mt-0 text-center font-bold mb-8'>Skills</h2>
+            </Fade>
             <div>
               
                <div className='flex flex-col lg:flex-row gap-10'>

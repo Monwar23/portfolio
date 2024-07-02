@@ -2,11 +2,6 @@
 
 import dynamic from "next/dynamic";
 
-// import About from "@/components/About";
-// import Contact from "@/components/Contact";
-// import Mine from "@/components/Mine";
-// import Projects from "@/components/Projects";
-// import Skills from "@/components/Skills";
 const About = dynamic(() => import("@/components/About"), {
   ssr: false,
 });
@@ -20,6 +15,9 @@ const Skills = dynamic(() => import("@/components/Skills"), {
   ssr: false,
 });
 const Contact = dynamic(() => import("@/components/Contact"), {
+  ssr: false,
+});
+const Education = dynamic(() => import("@/components/Education"), {
   ssr: false,
 });
 
@@ -38,6 +36,9 @@ export default function Home() {
       </div>
       <div id="project">
         <Projects></Projects>
+      </div>
+      <div id="education">
+        <Education></Education>
       </div>
       <div id="contact">
         <Contact></Contact>

@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import React from 'react';
-import { FaFacebookF, FaHome, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaHome, FaLinkedinIn, FaUserGraduate } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { GrResume, GrProjects } from "react-icons/gr";
 import { MdContactPage } from "react-icons/md";
@@ -43,6 +43,8 @@ const Navbar = () => {
                         <li><Link href="#about" title="About me"><CgProfile className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
                         <li><Link href="#skills" title="Skills"><GiSkills className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
                         <li><Link href="#project" title="Projects"><GrProjects className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
+                        <li><Link href="#education" title="Education"><FaUserGraduate 
+                        className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
                         <li><a href="https://drive.google.com/file/d/15IbHeXAa18wGsPtMFlf9yV3rlyFJw9fe/view?usp=sharing" title="Resume" target='_blank' onClick={handleResumeClick}><GrResume className='text-2xl mt-1 hover:text-blue-500' /></a></li>
                         <li><Link href="#contact" title="Contact"><MdContactPage className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
                     </ul>
@@ -55,6 +57,7 @@ const Navbar = () => {
                     <li><Link href="#about" title="About me"><CgProfile className='text-2xl hover:text-blue-500' /></Link></li>
                     <li><Link href="#skills" title="Skills"><GiSkills className='text-2xl hover:text-blue-500' /></Link></li>
                     <li><Link href="#project" title="Projects"><GrProjects className='text-2xl hover:text-blue-500' /></Link></li>
+                    <li><Link href="#education" title="Education"><FaUserGraduate className='text-2xl hover:text-blue-500' /></Link></li>
                     <li><a href="https://drive.google.com/file/d/15IbHeXAa18wGsPtMFlf9yV3rlyFJw9fe/view?usp=sharing" title="Resume" target='_blank' onClick={handleResumeClick}><GrResume className='text-2xl hover:text-blue-500' /></a></li>
                     <li><Link href="#contact" title="Contact"><MdContactPage className='text-2xl hover:text-blue-500' /></Link></li>
                 </ul>
