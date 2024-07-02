@@ -9,6 +9,15 @@ import { GiSkills } from "react-icons/gi";
 import { FiGithub } from "react-icons/fi";
 
 const Navbar = () => {
+    const handleResumeClick = (e) => {
+        e.preventDefault();
+        const resumeLink = 'https://drive.google.com/uc?export=download&id=15IbHeXAa18wGsPtMFlf9yV3rlyFJw9fe';
+        const link = document.createElement('a');
+        link.href = resumeLink;
+        link.target = '_blank';
+        link.click();
+    };
+
     return (
         <div className="navbar fixed bg-[#1a1a2e] z-20">
             <div className="navbar-start">
@@ -34,7 +43,7 @@ const Navbar = () => {
                         <li><Link href="#about" title="About me"><CgProfile className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
                         <li><Link href="#skills" title="Skills"><GiSkills className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
                         <li><Link href="#project" title="Projects"><GrProjects className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
-                        <li><Link href="https://drive.google.com/file/d/15IbHeXAa18wGsPtMFlf9yV3rlyFJw9fe/view?usp=sharing" title="Resume" target='_blank'><GrResume className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
+                        <li><a href="https://drive.google.com/file/d/15IbHeXAa18wGsPtMFlf9yV3rlyFJw9fe/view?usp=sharing" title="Resume" target='_blank' onClick={handleResumeClick}><GrResume className='text-2xl mt-1 hover:text-blue-500' /></a></li>
                         <li><Link href="#contact" title="Contact"><MdContactPage className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
                     </ul>
                 </div>
@@ -46,7 +55,7 @@ const Navbar = () => {
                     <li><Link href="#about" title="About me"><CgProfile className='text-2xl hover:text-blue-500' /></Link></li>
                     <li><Link href="#skills" title="Skills"><GiSkills className='text-2xl hover:text-blue-500' /></Link></li>
                     <li><Link href="#project" title="Projects"><GrProjects className='text-2xl hover:text-blue-500' /></Link></li>
-                    <li><Link href="https://drive.google.com/file/d/15IbHeXAa18wGsPtMFlf9yV3rlyFJw9fe/view?usp=sharing" title="Resume" target='_blank'><GrResume className='text-2xl hover:text-blue-500' /></Link></li>
+                    <li><a href="https://drive.google.com/file/d/15IbHeXAa18wGsPtMFlf9yV3rlyFJw9fe/view?usp=sharing" title="Resume" target='_blank' onClick={handleResumeClick}><GrResume className='text-2xl hover:text-blue-500' /></a></li>
                     <li><Link href="#contact" title="Contact"><MdContactPage className='text-2xl hover:text-blue-500' /></Link></li>
                 </ul>
             </div>
