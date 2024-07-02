@@ -49,7 +49,7 @@ const Navbar = () => {
                         <li><Link href="#contact" title="Contact"><MdContactPage className='text-2xl mt-1 hover:text-blue-500' /></Link></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-2xl text-white">Monwar Hossain</a>
+                <Link href="/" className="btn btn-ghost text-2xl text-white">Monwar Hossain</Link>
             </div>
             <div className="navbar-center hidden lg:flex text-white">
                 <ul className="menu menu-horizontal px-1">
