@@ -3,7 +3,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const About = () => {
     return (
-        <div className="flex justify-center items-center min-h-screen px-4">
+        <div className="flex justify-center items-center lg:min-h-screen px-4">
             <div className="w-full max-w-2xl">
                 <Fade direction="left">
                     <h2 className="text-blue-500 text-3xl text-center mt-5 lg:mt-0 font-bold mb-8">About Me</h2>

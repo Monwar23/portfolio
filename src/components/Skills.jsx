@@ -10,7 +10,7 @@ const Skills = () => {
             </Fade>
             <div>
               
-               <div className='flex flex-col lg:flex-row gap-10'>
+               <div className='flex flex-col lg:flex-row gap-2 lg:gap-10'>
                <Fade direction="left">
                <div className='bg-[#1a1a2e] rounded-md'>
                     <h2 className='border border-blue-500 text-white bg-gradient-to-r from-green-400 to-blue-500 p-2 text-center font-bold'>Frontend</h2>
