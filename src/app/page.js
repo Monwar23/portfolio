@@ -23,7 +23,7 @@ const Education = dynamic(() => import("@/components/Education"), {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-[#21213B] flex-col items-center justify-center p-24" >
+    <main className="flex min-h-screen bg-[#21213B] flex-col items-center justify-center p-5 lg:p-24" >
       
       <div id="/">
         <Mine></Mine>
