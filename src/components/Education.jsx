@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 
 const Education = () => {
     return (
-        <div className='mt-10 lg:px-6'>
+        <div className='mt-10 px-6'>
             <Fade direction='right'>
                 <h2 className='text-blue-500 text-3xl text-center font-bold mt-5 lg:mt-0 mb-8'>Education</h2>
             </Fade>
